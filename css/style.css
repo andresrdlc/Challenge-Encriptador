@@ -85,6 +85,7 @@ textarea::placeholder{
     color: #FFFFFF;
     border: none;
     cursor: pointer;
+    transition: 0.4s all;
 }
 
 .boton-secundario{
@@ -93,6 +94,19 @@ textarea::placeholder{
     color: #0A3871;
     margin-left: 10%;
 }
+
+.boton-primario:hover{
+    background: rgb(85, 85, 173);
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.boton-secundario:hover{
+    background: #ffffff;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
 
 /* Section resutaldo de encriptado-desencriptado */
 .area-resultado{
@@ -161,6 +175,13 @@ textarea::placeholder{
     color: #0A3871; 
     cursor: pointer;
     background: none;
+    transition: 0.4s all;
+}
+
+.boton-copia:hover{
+    background: #D8DFE8;
+    transform: scale(1.05);
+    text-decoration: underline;
 }
 
 /* Section footer*/
@@ -168,12 +189,16 @@ footer{
     width: 100%;
     text-align: center;
     padding: 15px 0;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 p a{
     text-decoration: none;
-    color: #0A3871;
+    color: #004eae;
+}
+p a:hover{
+    text-decoration: underline;
+    color: #0065e1;
 }
 
 @media  screen and (max-width: 768px) {
